@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #dfdfdf;
+  padding: 20px 60px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(174, 74, 255);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #222;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  font-size: larger;
+}
+
+.navbar-links a:hover {
+  transform: translateY(-5px);
+  color: rgb(174, 74, 255);
+}
+
+.navbar-button {
+  padding: 15px 15px;
+  border: rgb(0, 0, 0);
+  box-shadow: #222;
+  font-weight: 900;
+  background-color: rgb(174, 174, 174);
+  color: rgb(174, 74, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar-button:active {
+  background-color: rgb(91, 91, 91);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 18px 30px;
+    }
+
+    .navbar-links {
+        gap: 20px;
+    }
+
+    .navbar-links a {
+        font-size: 1rem;
+    }
+
+    .navbar-button {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbar-links a {
+        font-size: 0.95rem;
+    }
+
+    .navbar-button {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .navbar-links {
+        gap: 12px;
+    }
+
+    .navbar-links a {
+        font-size: 0.85rem;
+    }
+
+    .navbar-button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}

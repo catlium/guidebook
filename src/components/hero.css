@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.hero {
+    padding-top: 2rem;
+    background: #fcfbfb;
+    color: black;
+}
+
+.hero h1{
+    color: rgb(26, 26, 26);
+    font-size: 4rem;
+}
+
+.hero :nth-child(2) {
+    color: rgb(174, 74, 255);
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+.hero-info {
+    margin-top: 1.5rem;
+    color: rgb(68, 67, 67);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.hero-lr-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3.5rem;
+    gap: 3rem;
+}
+
+.hero-left {
+    flex: 1;
+    color: rgb(68, 67, 67);
+    font-size: 1.5rem;
+    background: #efe6f8;
+    border-radius: 3rem;
+    padding: 3.2rem 2rem;
+    word-spacing: 0.5rem;
+    line-height: 3rem;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 750px;
+    height: 450px;
+    border: 3px solid rgb(152, 150, 150);
+    border-radius: 3rem;
+    object-fit: cover;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-lr-container {
+        padding: 3rem 2.5rem;
+        gap: 2rem;
+    }
+
+    .hero-left {
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        word-spacing: 0.2rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .hero-image {
+        height: 350px;
+        border-radius: 2rem;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero :nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .hero-lr-container {
+        flex-direction: column;
+        padding: 2rem 1.25rem;
+        gap: 2rem;
+    }
+
+    .hero-left {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding: 1.25rem;
+        border-radius: 1.5rem;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+        border-radius: 1.5rem;
+    }
+
+    .hero-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero :nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .hero-lr-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-left {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        padding: 1rem;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+}
