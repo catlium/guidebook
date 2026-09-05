@@ -1,0 +1,78 @@
+.guide-card {
+  flex: 1;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2rem;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image area */
+
+.guide-card-image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.guide-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card content */
+
+.guide-card-content {
+  padding: 1.8rem;
+}
+
+.guide-card-category {
+  color: rgb(174, 74, 255);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.7rem;
+}
+
+.guide-card-content h3 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin: 0 0 0.8rem;
+}
+
+.guide-card-content > p:not(.guide-card-category) {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.guide-card-button {
+  padding: 0.7rem 1.2rem;
+  border: 1px solid rgb(174, 74, 255);
+  border-radius: 2rem;
+  background: transparent;
+  color: rgb(174, 74, 255);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.guide-card-button:hover {
+  background: rgb(174, 74, 255);
+  color: white;
+}

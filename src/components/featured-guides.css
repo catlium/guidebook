@@ -1,0 +1,48 @@
+.featured-guides {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5rem 6% 6rem;
+  background: #fcfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.featured-guides-heading {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 0 3rem;
+}
+
+.featured-label {
+  color: rgb(174, 74, 255);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.featured-guides-heading h2 {
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin: 1rem 0;
+}
+
+.featured-guides-heading > p:last-child {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.featured-guides-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}

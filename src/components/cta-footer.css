@@ -1,0 +1,143 @@
+.cta-footer {
+  width: 100%;
+  box-sizing: border-box;
+  background: #efe2fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-content {
+  min-height: 88vh;
+  padding: 5rem 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cta-label {
+  color: rgb(174, 74, 255);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.cta-content h2 {
+  color: #1a1a1a;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.cta-content > p:not(.cta-label) {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.9rem 1.6rem;
+  border: 1px solid rgb(174, 74, 255);
+  border-radius: 2rem;
+  background: rgb(174, 74, 255);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 2.5rem 8%;
+
+  background: #1a1a1a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer > p {
+  color: #bdbdbd;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: rgb(174, 74, 255);
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+}
+
+/* Tablet Display */
+
+@media (max-width: 1024px) {
+  .cta-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Mobile Display */
+
+@media (max-width: 768px) {
+  .cta-content {
+    min-height: 60vh;
+    padding: 4rem 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content > p:not(.cta-label) {
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

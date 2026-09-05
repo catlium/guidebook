@@ -34,10 +34,10 @@
   padding: 15px 15px;
   border: rgb(0, 0, 0);
   box-shadow: #222;
-  font-weight: 900;
-  background-color: rgb(174, 174, 174);
-  color: rgb(174, 74, 255);
-  border-radius: 10px;
+  font-weight: 600;
+  background: rgb(174, 74, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 3rem;
   cursor: pointer;
   font-size: 1rem;
 }
@@ -46,90 +46,78 @@
   background-color: rgb(91, 91, 91);
 }
 
-
-/* =========================
-   TABLET
-   ========================= */
+/* Tablet Display */
 
 @media (max-width: 1024px) {
+  .navbar {
+    padding: 18px 30px;
+  }
 
-    .navbar {
-        padding: 18px 30px;
-    }
+  .navbar-links {
+    gap: 20px;
+  }
 
-    .navbar-links {
-        gap: 20px;
-    }
+  .navbar-links a {
+    font-size: 1rem;
+  }
 
-    .navbar-links a {
-        font-size: 1rem;
-    }
-
-    .navbar-button {
-        padding: 12px 14px;
-        font-size: 0.9rem;
-    }
+  .navbar-button {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
 }
 
-
-/* =========================
-   MOBILE
-   ========================= */
+/* Mobile Display */
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-    .navbar {
-        padding: 15px 20px;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+  .navbar-logo {
+    font-size: 20px;
+  }
 
-    .navbar-logo {
-        font-size: 20px;
-    }
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .navbar-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
+  .navbar-links a {
+    font-size: 0.95rem;
+  }
 
-    .navbar-links a {
-        font-size: 0.95rem;
-    }
-
-    .navbar-button {
-        padding: 10px 12px;
-        font-size: 0.85rem;
-    }
+  .navbar-button {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
 }
 
-
-/* =========================
-   SMALL MOBILE
-   ========================= */
+/* Smaller Mobile Display */
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 12px 15px;
+  }
 
-    .navbar {
-        padding: 12px 15px;
-    }
+  .navbar-logo {
+    font-size: 18px;
+  }
 
-    .navbar-logo {
-        font-size: 18px;
-    }
+  .navbar-links {
+    gap: 12px;
+  }
 
-    .navbar-links {
-        gap: 12px;
-    }
+  .navbar-links a {
+    font-size: 0.85rem;
+  }
 
-    .navbar-links a {
-        font-size: 0.85rem;
-    }
-
-    .navbar-button {
-        padding: 8px 10px;
-        font-size: 0.8rem;
-    }
+  .navbar-button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
 }
