@@ -4,7 +4,6 @@ function CTAFooter() {
   return (
     <section className="cta-footer">
 
-      {/* CTA */}
       <div className="cta-content">
         <p className="cta-label">GET STARTED</p>
 
