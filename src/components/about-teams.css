@@ -1,28 +1,21 @@
 .about-team {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 3rem 5%;
+  padding: 4rem 5%;
   background: #ffffff;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+
   text-align: center;
-  overflow: hidden;
-}
-.about-team-heading {
-  max-width: 650px;
-  margin: 0;
 }
 
-.team-cards {
-  width: 100%;
-  padding-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
+.about-team-heading {
+  max-width: 650px;
+  margin: 0 0 2.5rem;
 }
 
 .team-label {
@@ -45,14 +38,25 @@
   line-height: 1.7;
 }
 
+.team-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
 .team-card {
   flex: 1;
   max-width: 320px;
   padding: 1.5rem;
   box-sizing: border-box;
+
   background: #f3eef7;
   border-radius: 2rem;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -66,12 +70,16 @@
 .team-image {
   width: 100%;
   height: 180px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-bottom: 1.25rem;
+
   background: #e8d7f7;
   border-radius: 1.5rem;
+
   overflow: hidden;
 }
 
@@ -100,15 +108,16 @@
   line-height: 1.6;
 }
 
+
 /* TABLET */
 
 @media (max-width: 1024px) {
   .about-team {
-    padding: 4rem 4%;
+    padding: 3rem 4%;
   }
 
   .about-team-heading {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .about-team-heading h2 {
@@ -124,14 +133,16 @@
   }
 
   .team-image {
-    height: 190px;
+    height: 170px;
   }
 }
+
 
 /* MOBILE */
 
 @media (max-width: 768px) {
   .about-team {
+    min-height: auto;
     padding: 4rem 1.5rem;
   }
 
@@ -150,7 +161,6 @@
   .team-cards {
     flex-direction: column;
     align-items: center;
-
     gap: 1.5rem;
   }
 
@@ -163,6 +173,7 @@
     height: 220px;
   }
 }
+
 
 /* SMALL MOBILE */
 
