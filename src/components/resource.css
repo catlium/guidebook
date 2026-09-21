@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* =========================================
+   RESOURCE PAGE
+   (All rules are scoped under .resources-page
+   so they never affect other pages.)
+========================================= */
+
+.resources-page {
+  min-height: 100vh;
+  background: #fcfbfb;
+  color: #222;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.resources-page .resources-hero {
+  background: #fcfbfb;
+  padding: 80px 20px 70px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.resources-page .resources-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resources-page .resources-small-heading {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: rgb(174, 74, 255);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.resources-page .resources-hero h1 {
+  margin: 0;
+
+  color: #1a1a1a;
+
+  font-size: clamp(2.8rem, 6vw, 5rem);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+.resources-page .resources-hero h1 span {
+  color: rgb(174, 74, 255);
+}
+
+.resources-page .resources-hero p {
+  margin-top: 20px;
+
+  color: rgb(174, 74, 255);
+
+  font-size: 1.2rem;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.resources-page .resources-content {
+  width: 88%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 60px 0;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.resources-page .section-heading {
+  margin-bottom: 25px;
+}
+
+.resources-page .section-heading h2 {
+  margin: 0 0 8px;
+
+  color: #1a1a1a;
+
+  font-size: 1.8rem;
+
+  font-weight: 800;
+}
+
+.resources-page .section-heading p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+  .resources-page .resources-content {
+    width: 90%;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .resources-page .resources-hero {
+    padding: 60px 20px;
+  }
+
+  .resources-page .resources-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .resources-page .resources-content {
+    width: 90%;
+
+    padding: 40px 0;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .resources-page .resources-hero {
+    padding: 50px 20px;
+  }
+
+  .resources-page .resources-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .resources-page .resources-hero p {
+    font-size: 1rem;
+  }
+
+  .resources-page .section-heading h2 {
+    font-size: 1.5rem;
+  }
+}
