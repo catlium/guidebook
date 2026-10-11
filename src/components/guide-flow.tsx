@@ -1,4 +1,5 @@
 import "./guide-flow.css";
+import { Link } from "react-router-dom";
 
 function GuideFlow() {
   return (
@@ -48,8 +49,8 @@ function GuideFlow() {
           </p>
         </div>
       </div>
-      <div className="explore-guide">
-        <button className="exp-guide-btn">Explore Guides</button>
+      <div className="explore-guide mt-13">
+        <Link className="cta-button" to="/guide">Explore All Guides →</Link>
       </div>
     </section>
   );

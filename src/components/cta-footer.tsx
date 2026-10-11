@@ -1,4 +1,5 @@
 import "./cta-footer.css";
+import { Link } from "react-router-dom";
 
 function CTAFooter() {
   return (
@@ -14,9 +15,7 @@ function CTAFooter() {
           your organization's digital workflow.
         </p>
 
-        <button className="cta-button">
-          Explore All Guides →
-        </button>
+        <Link className="cta-button" to="/guide">Explore All Guides →</Link>
       </div>
 
       {/* Footer */}
